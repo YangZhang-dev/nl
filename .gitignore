@@ -1,0 +1,11 @@
+/.idea/
+/dataset/
+/hymenoptera_data/
+/linear/
+/mymodel/
+/sequential/
+/sigmoid/
+/nl/logs/
+/nl/model_save/
+/nl/test_img/
+/dataset_test/
