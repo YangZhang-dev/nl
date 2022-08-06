@@ -7,7 +7,7 @@ from model import MyModule
 
 # from train import train_data
 
-img_path = "./test_img/dog_0.jpg"
+img_path = "test_img/dog_0.jpg"
 img = Image.open(img_path)
 
 compose = torchvision.transforms.Compose([torchvision.transforms.Resize((32, 32)), torchvision.transforms.ToTensor()])

@@ -23,7 +23,7 @@ class MyModule(nn.Module):
 
 
 module = MyModule()
-writer = SummaryWriter("./sigmoid")
+writer = SummaryWriter("sigmoid")
 step = 0
 for data in loader:
     img, tar = data

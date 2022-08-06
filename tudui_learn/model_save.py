@@ -6,11 +6,11 @@ from torch import nn
 
 vgg = torchvision.models.vgg16(pretrained=False)
 
-torch.save(vgg, "./mymodel/model_save_1.pth")
+torch.save(vgg, "mymodel/model_save_1.pth")
 
 # 方式二
 
-torch.save(vgg.state_dict(), "./mymodel/model_save_2.pth")
+torch.save(vgg.state_dict(), "mymodel/model_save_2.pth")
 
 
 # 注意
@@ -25,4 +25,4 @@ class MyModule(nn.Module):
 
 
 module = MyModule()
-torch.save(module,"mymodel/mymodel.pth")
+torch.save(module, "mymodel/mymodel.pth")

@@ -1,6 +1,6 @@
 import torch
 from torch import nn
-from torch.nn import Sequential, Conv2d, MaxPool2d, Flatten, Linear
+from torch.nn import Sequential, Conv2d, MaxPool2d, Flatten, Linear, BatchNorm1d
 from torch.utils.tensorboard import SummaryWriter
 
 
@@ -18,6 +18,7 @@ class MyModule(nn.Module):
             Flatten(),
             Linear(1024, 64),
             Linear(64, 10)
+
         )
 
     def forward(self, input):
@@ -27,6 +28,6 @@ class MyModule(nn.Module):
 input = torch.ones(64, 3, 32, 32)
 module = MyModule()
 output = module(input)
-writer = SummaryWriter("./sequential")
+writer = SummaryWriter("sequential")
 writer.add_graph(module, input)
 writer.close()

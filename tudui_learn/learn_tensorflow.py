@@ -3,7 +3,7 @@ from PIL import Image
 from torch.utils.tensorboard import SummaryWriter
 from torchvision import transforms
 
-img_path ="hymenoptera_data/train/ants/0013035.jpg"
+img_path = "hymenoptera_data/train/ants/0013035.jpg"
 img1=cv2.imread(img_path) # narrays
 img2=Image.open(img_path)
 

@@ -23,7 +23,7 @@ class MyModule(nn.Module):
 
 module = MyModule()
 step = 0
-writer = SummaryWriter("./linear")
+writer = SummaryWriter("linear")
 for data in loader:
     img, tar = data
     writer.add_images("img", img, step)
