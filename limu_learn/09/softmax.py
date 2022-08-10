@@ -2,9 +2,10 @@
 # Create by YangZhang on 2022/8/8
 
 import torch
+from d2l.torch import load_data_fashion_mnist
 from torch import nn
 from d2l import torch as d2l
-from softmax_all import load_data_fashion_mnist
+
 batch_size = 256
 train_iter, test_iter = load_data_fashion_mnist(batch_size)
 
